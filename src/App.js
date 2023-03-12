@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Content from "./layout/content";
+import SideBar from "./layout/sideBar";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // get locationState => call Api => set LocationWeather
+
+    // get lat and lon
+
+    // call API and get data
+
+    return (
+        <div className="w-full md:w-5/6 md:mx-auto md:my-10 xl:w-3/4  xl:mx-auto xl:my-10 lg:flex justify-between  rounded-3xl shadow-2xl  ">
+            <BrowserRouter>
+                <Content />
+            </BrowserRouter>
+            <SideBar />
+        </div>
+    );
 }
 
 export default App;
