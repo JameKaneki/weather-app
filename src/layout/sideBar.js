@@ -26,6 +26,7 @@ function SideBar() {
                     <img
                         className="w-1/3"
                         src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678556562/3_ru3cxl.png"
+                        alt="#"
                     />
                 </div>
             </div>

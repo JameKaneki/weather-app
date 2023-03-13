@@ -11,7 +11,6 @@ function ContentRouter(prop) {
             <Routes>
                 <Route
                     index
-                    path="/today"
                     element={<Today hourly={prop.hour} />}
                 />
                 <Route path="/week" element={<Week week={prop.week} />} />

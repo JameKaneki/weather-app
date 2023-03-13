@@ -5,7 +5,7 @@ function Today({ hourly }) {
                 return (
                     <div key={index} className="p-2 mx-2 text-center font-bold">
                         <h3>{item.time.slice(0, 3)}</h3>
-                        <img className="" src={item.condition.icon} />
+                        <img className="" src={item.condition.icon} alt="#" />
                         <h3 className="">{Math.floor(item.temp_c)}°C</h3>
                     </div>
                 );

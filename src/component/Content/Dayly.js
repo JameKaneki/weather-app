@@ -50,7 +50,6 @@ function Dayly({ now }) {
                     <div className="flex">
                         <div>
                             <h3>{now.humidity} %</h3>
-                            <h3></h3>
                         </div>
                         <div className="my-auto">
                             <FontAwesomeIcon
@@ -65,7 +64,6 @@ function Dayly({ now }) {
                     <div className="flex">
                         <div>
                             <h3>{now.visibility} Km/h</h3>
-                            <h3></h3>
                         </div>
                         <div className="my-auto">
                             <FontAwesomeIcon
