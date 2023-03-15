@@ -35,7 +35,7 @@ function Dayly({ now }) {
                     <h3 className="text-2xl  font-black my-2 ">AIR QUALITY</h3>
                     <div className="bg-img rounded-xl  p-3 text-white">
                         <h2 className="text-3xl">
-                            Chỉ số không khí: {now.air_quality.index}
+                            AQI: {now.air_quality.index}
                         </h2>
                         <h3 className="text-3xl">{now.air_quality.text}</h3>
                         <div className="py-16"></div>
