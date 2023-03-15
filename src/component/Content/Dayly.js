@@ -13,7 +13,7 @@ function Dayly({ now }) {
                 {/* dayly check  */}
                 <div className="font-quick w-1/3 mx-3">
                     <h3 className="text-2xl  font-black my-2  ">
-                        {now.location}
+                        {now.location.toUpperCase()}
                     </h3>
                     <div className="bg-color-5382B7 p-5  rounded-xl text-white">
                         <h2 className="text-4xl text-center">

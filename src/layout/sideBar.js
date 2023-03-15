@@ -6,14 +6,14 @@ function SideBar() {
     const data = WeatherData.Now.suntype;
     const now = WeatherData.Now;
     return (
-        <div className="rounded-r-3xl w-full lg:w-1/3 xl:w-1/3 bg-color-#CAE1F6 p-5 px-5 font-quick">
-            <div className="flex justify-between mb-8">
-                <div className="w-1/2 text-4xl my-auto font-bold">
+        <div className="rounded-r-3xl w-full lg:w-1/3 xl:w-1/4 bg-color-#CAE1F6 p-5 px-5 font-quick">
+            <div className="flex justify-end mb-8">
+                <div className="w-1/2 mx-2 text-4xl my-auto font-bold">
                     <h2>Weather Forecast</h2>
                 </div>
-                <div className="w-1/2">
+                <div className="w-1/4">
                     <img
-                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678895846/LOGO_j7jy20.png"
+                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678899638/logo3_y7erj1.png"
                         alt="#"
                     />
                 </div>
@@ -29,8 +29,8 @@ function SideBar() {
                         UV now: {now.uv}
                     </h2>
                     <img
-                        className="w-1/2"
-                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678895846/UV_lkbc5e.png"
+                        className="w-1/3"
+                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678899401/UV2_ees1iv.png"
                         alt="#"
                     />
                 </div>
@@ -40,14 +40,14 @@ function SideBar() {
                 <h2 className="bg-color-5382B7 text-white font-black text-2xl rounded-2xl my-2  p-1 text-center">
                     PRESSURE
                 </h2>
-                <div className="flex my-4 justify-between">
+                <div className="flex justify-between">
                     <h2 className="inline-block my-auto text-2xl font-medium">
                         {" "}
                         {now.pressure} mb
                     </h2>
                     <img
                         className="w-1/4 mr-5"
-                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678896901/apsuat_chaowo.png"
+                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678899400/apsuat2_ldutdz.png"
                         alt="#"
                     />
                 </div>
@@ -58,7 +58,7 @@ function SideBar() {
                     SUNRISE & SUNSET
                 </h2>
                 <div>
-                    <div className="flex my-4 justify-between ">
+                    <div className="flex my-2 justify-between ">
                         <h2 className="inline-block my-auto text-2xl font-medium">
                             {data.sunrise}
                         </h2>
@@ -68,7 +68,7 @@ function SideBar() {
                             alt="#"
                         />
                     </div>
-                    <div className="flex my-4 justify-between ">
+                    <div className="flex my-2 justify-between ">
                         <h2 className="inline-block my-auto text-2xl font-medium">
                             {data.sunset}
                         </h2>
