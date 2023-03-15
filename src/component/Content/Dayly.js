@@ -32,7 +32,7 @@ function Dayly({ now }) {
                 </div>
                 {/* air_quality  */}
                 <div className="font-quick w-2/3 mx-3  ">
-                    <h3 className="text-2xl  font-black my-2 ">Air Quality</h3>
+                    <h3 className="text-2xl  font-black my-2 ">AIR QUALITY</h3>
                     <div className="bg-img rounded-xl  p-3 text-white">
                         <h2 className="text-3xl">
                             Chỉ số không khí: {now.air_quality.index}
@@ -46,7 +46,7 @@ function Dayly({ now }) {
             {/* bottom  */}
             <div className="flex justify-around">
                 <div className="text-xl font-normal m-2">
-                    <h2 className="text-xl font-bold my-2">Humidity</h2>
+                    <h2 className="text-xl font-bold my-2">HUMIDITY</h2>
                     <div className="flex">
                         <div>
                             <h3>{now.humidity} %</h3>
@@ -60,7 +60,7 @@ function Dayly({ now }) {
                     </div>
                 </div>
                 <div className="text-xl font-normal m-2">
-                    <h2 className="text-xl font-bold my-2">Visibility</h2>
+                    <h2 className="text-xl font-bold my-2">VISIBILITY</h2>
                     <div className="flex">
                         <div>
                             <h3>{now.visibility} Km/h</h3>
@@ -74,7 +74,7 @@ function Dayly({ now }) {
                     </div>
                 </div>
                 <div className="text-xl font-normal m-2">
-                    <h2 className="text-xl font-bold my-2">Wind Status</h2>
+                    <h2 className="text-xl font-bold my-2"> WIND STATUS</h2>
                     <div className="flex">
                         <div>
                             <h3>{now.wind.wind_kph} km/h</h3>

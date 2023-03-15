@@ -4,51 +4,69 @@ import { WeatherDataContext } from "../Context/WeatherData";
 function SideBar() {
     const WeatherData = useContext(WeatherDataContext);
     const data = WeatherData.Now.suntype;
+    const now = WeatherData.Now;
     return (
-        <div className="rounded-r-3xl w-full lg:w-1/3 xl:w-1/3 bg-color-B6D5F0 p-5 px-5 font-quick">
-            <div className="flex justify-between">
-                <div className="w-1/2 text-4xl font-bold">
+        <div className="rounded-r-3xl w-full lg:w-1/3 xl:w-1/3 bg-color-#CAE1F6 p-5 px-5 font-quick">
+            <div className="flex justify-between mb-8">
+                <div className="w-1/2 text-4xl my-auto font-bold">
                     <h2>Weather Forecast</h2>
                 </div>
-                <div className="w-1/2 px-2">
+                <div className="w-1/2">
                     <img
-                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678556563/6f_sglfbv.png"
+                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678895846/LOGO_j7jy20.png"
                         alt="#"
                     />
                 </div>
             </div>
+
             {/* uv  */}
-            <div className="my-2 ">
-                <h2 className=" bg-color-5382B7 text-white font-black text-2xl rounded-2xl inline-block  p-2 text-center">
-                    UV Index
+            <div className="mb-5 ">
+                <h2 className=" bg-color-5382B7 text-white font-black text-2xl rounded-2xl my-2  p-1 text-center">
+                    UV INDEX
                 </h2>
                 <div className="flex justify-between">
+                    <h2 className="inline-block my-auto text-2xl font-medium">
+                        UV now: {now.uv}
+                    </h2>
                     <img
-                        className="w-1/3"
-                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678556562/3_ru3cxl.png"
+                        className="w-1/2"
+                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678895846/UV_lkbc5e.png"
                         alt="#"
                     />
                 </div>
             </div>
-            <div className="">
-                <h2 className="bg-color-5382B7 text-white font-black text-2xl rounded-2xl inline-block  p-2 text-center">
-                    Sunrise & Sunset
+            {/* Pressure  */}
+            <div className="mb-5 ">
+                <h2 className="bg-color-5382B7 text-white font-black text-2xl rounded-2xl my-2  p-1 text-center">
+                    PRESSURE
                 </h2>
                 <div>
-                    <div className="flex">
+                    <h2 className="inline-block my-auto text-2xl font-medium">
+                        {" "}
+                        {now.pressure} mb
+                    </h2>
+                </div>
+            </div>
+            {/* Sun  */}
+            <div className="mb-5 ">
+                <h2 className="bg-color-5382B7 text-white font-black text-2xl rounded-2xl my-2  p-1 text-center">
+                    SUNRISE & SUNSET
+                </h2>
+                <div>
+                    <div className="flex my-4">
                         <img
-                            className="w-1/3"
-                            src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678590279/5f2_1_jdmenm.png"
+                            className="w-1/5 mr-5"
+                            src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678895936/5f2_3_dmilwz.png"
                             alt="#"
                         />
                         <h2 className="inline-block my-auto text-2xl font-medium">
                             {data.sunrise}
                         </h2>
                     </div>
-                    <div className="flex">
+                    <div className="flex my-4">
                         <img
-                            className="w-1/3"
-                            src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678590279/5f3_1_xgrj7n.png"
+                            className="w-1/5 mr-5"
+                            src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678895884/5f1_snzpvf.png"
                             alt="#"
                         />
                         <h2 className="inline-block my-auto text-2xl font-medium">

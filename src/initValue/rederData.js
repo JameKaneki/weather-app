@@ -110,6 +110,7 @@ const FilterWeatherData = (data) => {
                 sunset: data.forecast.forecastday[0].astro.sunset,
             },
             hourly: data.forecast.forecastday[0].hour.map((item) => hour(item)),
+            pressure: current.pressure_mb,
         },
         week: data.forecast.forecastday.map((item, index) => week(item, index)),
     };

@@ -9,10 +9,7 @@ function ContentRouter(prop) {
         <div className="w-full" id="ContentRouter">
             <RouterMenu />
             <Routes>
-                <Route
-                    index
-                    element={<Today hourly={prop.hour} />}
-                />
+                <Route index path="/" element={<Today hourly={prop.hour} />} />
                 <Route path="/week" element={<Week week={prop.week} />} />
             </Routes>
         </div>

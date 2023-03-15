@@ -9,7 +9,6 @@ const Content = () => {
     // get today weather data at weatherdata[0]
     const WeatherData = useContext(WeatherDataContext);
     // const Dayly = WeatherData[0];
-    console.log(WeatherData);
     return (
         <div
             className="w-full lg:w-2/3 bg-color-E3F2FF  p-5 rounded-l-3xl font-quick"
