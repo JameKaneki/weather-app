@@ -11,7 +11,7 @@ const Content = () => {
     // const Dayly = WeatherData[0];
     return (
         <div
-            className="w-full lg:w-2/3 xl:w-3/4 bg-color-E3F2FF  p-5 rounded-l-3xl font-quick"
+            className="w-full md:w-2/3 lg:w-2/3 xl:w-3/4 bg-color-E3F2FF  p-5 rounded-l-3xl font-quick"
             id="Content"
         >
             <div className="">

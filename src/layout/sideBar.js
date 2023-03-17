@@ -7,16 +7,8 @@ function SideBar() {
     const now = WeatherData.Now;
     return (
         <div className="rounded-r-3xl w-full lg:w-1/3 xl:w-1/4 bg-color-#CAE1F6 p-5 px-5 font-quick">
-            <div className="flex justify-end mb-8">
-                <div className="w-1/2 mx-2 text-4xl my-auto font-bold">
-                    <h2>Weather Forecast</h2>
-                </div>
-                <div className="w-1/4">
-                    <img
-                        src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678899638/logo3_y7erj1.png"
-                        alt="#"
-                    />
-                </div>
+            <div className="flex justify-between mb-8">
+                <img src="https://res.cloudinary.com/dwohqjquz/image/upload/v1679024562/Logo_aybubg.png" />
             </div>
 
             {/* uv  */}
@@ -24,7 +16,7 @@ function SideBar() {
                 <h2 className=" bg-color-5382B7 text-white font-black text-2xl rounded-2xl my-2  p-1 text-center">
                     UV INDEX
                 </h2>
-                <div className="flex justify-between">
+                <div className="flex justify-between pr-8">
                     <h2 className="inline-block my-auto text-2xl font-medium">
                         UV now: {now.uv}
                     </h2>
@@ -40,7 +32,7 @@ function SideBar() {
                 <h2 className="bg-color-5382B7 text-white font-black text-2xl rounded-2xl my-2  p-1 text-center">
                     PRESSURE
                 </h2>
-                <div className="flex justify-between">
+                <div className="flex justify-between pr-2">
                     <h2 className="inline-block my-auto text-2xl font-medium">
                         {" "}
                         {now.pressure} mb
@@ -63,8 +55,8 @@ function SideBar() {
                             {data.sunrise}
                         </h2>
                         <img
-                            className="w-1/5 mr-5"
-                            src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678895936/5f2_3_dmilwz.png"
+                            className="w-1/3 mr-5"
+                            src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678590279/5f2_1_jdmenm.png"
                             alt="#"
                         />
                     </div>
@@ -73,8 +65,8 @@ function SideBar() {
                             {data.sunset}
                         </h2>
                         <img
-                            className="w-1/5 mr-5"
-                            src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678895884/5f1_snzpvf.png"
+                            className="w-1/3 mr-5"
+                            src="https://res.cloudinary.com/dwohqjquz/image/upload/v1678590279/5f3_1_xgrj7n.png"
                             alt="#"
                         />
                     </div>

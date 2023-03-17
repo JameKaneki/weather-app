@@ -13,7 +13,7 @@ function WeatherDataProvider({ children }) {
     // call api to get weather data
     useEffect(() => {
         fetch(
-            `http://api.weatherapi.com/v1/forecast.json?key=fc7d809c9db347b293d174926230803&q=${locationState.locationState.lat},${locationState.locationState.lon}&days=7&aqi=yes&alerts=no&lang=vi`,
+            `http://api.weatherapi.com/v1/forecast.json?key=fc7d809c9db347b293d174926230803&q=${locationState.locationState.lat},${locationState.locationState.lon}&days=7&aqi=yes&alerts=no`,
         )
             .then((res) => res.json())
             .then((post) => {

@@ -37,7 +37,7 @@
 .font-quick {
     font-family: "Quicksand", sans-serif !important;
 }
-@media (min-width: 1024px) {
+@media (max-width: 1280px) {
     .bg-img {
         background: url("https://res.cloudinary.com/dwohqjquz/image/upload/v1678472720/4f_lhd2s7.png");
     }
